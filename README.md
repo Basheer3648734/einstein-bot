@@ -1,1 +1,1 @@
-# einstein-bot
+# Einstein - The Bot.
