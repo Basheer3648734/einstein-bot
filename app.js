@@ -4,7 +4,7 @@ const request = require('request');
 const { prefix, token } = require('./config.json');
 const client = new Discord.Client(); // create new discord instance
 client.commands = new Discord.Collection();
-
+let jobs = 0;
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
@@ -28,6 +28,7 @@ client.on('message', message => {
 
 	try {
 		client.commands.get(command).execute(message, args);
+		console.log(`total job(s):${++jobs}`)
 	}
 	catch (error) {
 		console.log(error);

@@ -1,6 +1,6 @@
 {
 	"name": "einstein",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "basic discord bot",
 	"main": "app.js",
 	"scripts": {

@@ -13,7 +13,7 @@ module.exports = {
 		else {
 			request.get(url, {
 				'headers': {
-					'X-Api-Key': 'your_key_here'
+					'X-Api-Key': 'c322b5b8d63e4ee6b23b198c9d55f7c2'
 				}
 			}
 				, (error, response, body) => {

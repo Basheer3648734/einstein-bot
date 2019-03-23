@@ -1,9 +1,11 @@
 const request = require('request');
+var snoowrap = require('snoowrap');
+
 
 module.exports = {
 	name: 'meme',
 	discription: 'returns a meme',
 	execute(message, args) {
-		message.channel.send('Meme here:')
+		message.channel.send('meme')
 	}
 }
